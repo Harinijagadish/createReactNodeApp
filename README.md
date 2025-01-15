@@ -77,7 +77,7 @@ PORT=3000
 
 
 
-Screenshot attacheed belowfor reference:
+Screenshot attached below reference:
 
 ![Screenshot 2025-01-15 173727](https://github.com/user-attachments/assets/6266fd9f-4aa0-4a20-ac9a-3f91ace00021)
 
