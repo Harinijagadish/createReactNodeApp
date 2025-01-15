@@ -59,8 +59,6 @@ Copy code
 touch .env
 Add the following lines to the .env file:
 
-plaintext
-Copied
 # MongoDB Configuration
 MONGO_URI=mongodb://localhost:27017/your-database-name
 
@@ -70,3 +68,27 @@ JWT_EXPIRE=3600 # JWT expiry time in seconds (1 hour)
 
 # Port Number
 PORT=3000
+
+
+
+
+
+
+
+
+
+Screenshot attacheed belowfor reference:
+
+![Screenshot 2025-01-15 173727](https://github.com/user-attachments/assets/6266fd9f-4aa0-4a20-ac9a-3f91ace00021)
+
+
+
+
+
+
+
+
+
+
+
+
