@@ -14,57 +14,38 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+Here is a complete README.md file that will guide you through setting up and running the backend (Node.js with MongoDB) and frontend (React) with JWT authentication and CRUD operations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+markdown
+Copy code
+# Full-Stack Node.js, MongoDB & React CRUD Application with JWT Authentication
 
-### `npm run build`
+This project demonstrates how to create a full-stack application using **Node.js**, **MongoDB**, and **React**. The backend supports **CRUD operations** with JWT **authentication**. The frontend provides a simple interface for managing users.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** (v14 or higher)
+- **MongoDB** (local or MongoDB Atlas)
+- **React** (v17 or higher)
+- **npm** (or **yarn**)
+  
+## 1. Backend Setup (Node.js + MongoDB)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1.1 Install Dependencies
 
-### `npm run eject`
+1. Create a new directory for your backend:
+   mkdir node-backend
+   cd node-backend
+Initialize a new Node.js project:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm init -y
+Install necessary dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install express mongoose cors dotenv jsonwebtoken bcryptjs
+1.2 Create .env File
+In the root directory, create a .env file to store environment variables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imdvd2RhbUBnbWFpbC5jb20iLCJpYXQiOjE3MDU0MTU1MjZ9.zkCUe9qE-LPRpDbKUJ95U7XEqNi0jmh1KUx0Cqcl22g
+BASE_URL=http://localhost:3000
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+NOTE : Just to use authentication purpose
